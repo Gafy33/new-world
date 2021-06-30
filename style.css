@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inconsolata:wght@500&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inconsolata:wght@500&display=swap');
+
+*
+{
+	font-family: 'Inconsolata', monospace;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.banner
+{
+	position: relative;
+	min-height: 100vh;
+    background: url(banner.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box
+{
+	text-align: center;
+}
+.box img
+{
+	max-width: 700px;
+}
+.sci
+{
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.sci li
+{
+	list-style: none;
+}
+.sci li p
+{
+	position: relative;
+	margin-right: 25px;
+	display: inline-block;
+	transform: scale(0.75);
+	opacity: 0.8;
+}
+.services .content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.services .content .servicesBx
+{
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 20px;
+    color: #fff;
+    width: 175px;
+    height: 175px;
+    margin: 50px;
+    opacity: 0.8;
+    border-radius: 50%;
+}
+.services .content .servicesBx h2
+{
+    font-size: 30px;
+    font-weight: 400;
+}
+.services .content .servicesBx h3
+{
+    font-size: 100px;
+    font-weight: 700;
+}
+.heading
+{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    color: #111;
+}
+
+.heading h2
+{
+    font-weight: 600;
+    font-size:  30px;
+}
+.heading.white
+{
+    color: #fff;
+}
+
+/*responsive*/
+@media(max-width: 1120px)
+{
+	.banner
+	{
+    	background-position: center;
+	}
+	.box img
+	{
+		max-width: 450px;
+	}
+	.services .content .servicesBx
+	{
+	    margin: 30px;
+	}
+	.services .content .servicesBx h2
+	{
+	    font-size: 25px;
+	    font-weight: 400;
+	}
+	.services .content .servicesBx h3
+	{
+	    font-size: 75px;
+	    font-weight: 700;
+	}
+}
+
+@media(max-width:  940px)
+{
+	.box img
+	{
+		max-width: 400px;
+	}
+	.services .content .servicesBx
+	{
+	    padding: 30px 15px;
+	    width: 140px;
+	    height: 140px;
+	    margin: 15px;
+	}
+	.services .content .servicesBx h2
+	{
+	    font-size: 20px;
+	    font-weight: 300;
+	}
+	.services .content .servicesBx h3
+	{
+	    font-size: 65px;
+	    font-weight: 500;
+	}
+}
+
+@media(max-width:  690px)
+{
+	.box img
+	{
+		max-width: 300px;
+	}
+	.services .content .servicesBx
+	{
+	    padding: 30px 15px;
+	    width: 110px;
+	    height: 110px;
+	    margin: 15px;
+	}
+}
